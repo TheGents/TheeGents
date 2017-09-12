@@ -14,11 +14,11 @@ import {
 
 export default class TheeGents extends Component {
   render() {
-    let registerLogo = { uri: 'http://freevector.co/wp-content/uploads/2013/07/25978-suit-and-tie-outfit.png' }
+    // let registerLogo = { uri: 'http://freevector.co/wp-content/uploads/2013/07/25978-suit-and-tie-outfit.png' }
     return (
       <View style={styles.container}>
         <Text style={styles.welcome}>
-          <Image source = {registerLogo} style={{width: 193, height: 110}} />
+          {/* <Image source = {registerLogo} style={{width: 193, height: 110}} /> */}
         </Text>
         <Text style={styles.instructions}>
           To get started, edit index.ios.js
