@@ -11,7 +11,7 @@
 	<key>CFBundleIdentifier</key>
 	<string>org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)</string>
 	<key>CFBundleURLTypes</key>
-	<array>
+<array>
     <dict>
         <key>CFBundleTypeRole</key>
         <string>None</string>
@@ -22,7 +22,7 @@
             <string>org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)</string>
         </array>
     </dict>
-	</array>
+</array>
 	<key>CFBundleInfoDictionaryVersion</key>
 	<string>6.0</string>
 	<key>CFBundleName</key>
