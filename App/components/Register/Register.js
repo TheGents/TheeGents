@@ -5,7 +5,8 @@ import {
     StyleSheet,
     Text,
     View,
-    Image
+    Image,
+    Button
   } from 'react-native';
 
 import LoginButton from './LoginButton/LoginButton.js';
@@ -13,6 +14,7 @@ import LoginButton from './LoginButton/LoginButton.js';
 export default class Register extends Component {
     render() {
         return (
+            <Image source={require('../../../App/images/bg.jpg')} style={styles.backgroundImage}>
             <View style={styles.container}>
                 
                 <Text style={styles.welcome}>
@@ -30,25 +32,35 @@ export default class Register extends Component {
                 </Text>
 
                 <LoginButton />
-            </View>)
+                
+            </View>
+            </Image>)
     }   
 }
 
 const styles = StyleSheet.create({
+    backgroundImage: {
+        flex: 1,
+        alignSelf: 'stretch',
+        width: null,
+    },
     container: {
       flex: 1,
       justifyContent: 'center',
       alignItems: 'center',
-      backgroundColor: '#F5FCFF',
+    //   backgroundColor: '#F5FCFF',
     },
     welcome: {
       fontSize: 20,
       textAlign: 'center',
+      color: 'white',
+      backgroundColor: 'rgba(0,0,0,0)',
       margin: 10,
     },
     instructions: {
       textAlign: 'center',
-      color: '#333333',
+      color: 'white',
+      backgroundColor: 'rgba(0,0,0,0)',
       marginBottom: 5,
     },
   });
