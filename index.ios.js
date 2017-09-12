@@ -9,23 +9,24 @@ import {
   AppRegistry,
   StyleSheet,
   Text,
-  View
+  View,
+  Image
 } from 'react-native';
 
 export default class TheeGents extends Component {
   render() {
-    // let registerLogo = { uri: 'http://freevector.co/wp-content/uploads/2013/07/25978-suit-and-tie-outfit.png' }
     return (
       <View style={styles.container}>
         <Text style={styles.welcome}>
-          {/* <Image source = {registerLogo} style={{width: 193, height: 110}} /> */}
+          Gents
+        </Text>
+        <Image source={require('./App/images/gents.png')} style={{width: 193, height: 200}}/>
+        <Text style={styles.instructions}>
+          Date with class.
         </Text>
         <Text style={styles.instructions}>
-          To get started, edit index.ios.js
-        </Text>
-        <Text style={styles.instructions}>
-          Press Cmd+R to reload,{'\n'}
-          Cmd+D or shake for dev menu
+          Example new line,{'\n'}
+          I love kitkats
         </Text>
       </View>
     );
