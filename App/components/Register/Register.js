@@ -10,11 +10,15 @@ import {
   } from 'react-native';
 
 import LoginButton from './LoginButton/LoginButton.js';
+import Nav from '../global-widgets/nav';
+// import profile from '../Profile/profile.js'
 
-export default class Register extends Component {
-    render() {
+
+const Register = (props) => {
+    const { navigate } = props.navigation;
         return (
             <Image source={require('../../../App/images/bg.jpg')} style={styles.backgroundImage}>
+            <Nav  type = "profile" onPress={() => navigate('Profile')} title="Go to Second Screen"/>
             <View style={styles.container}>
                 
                 <Text style={styles.welcome}>
@@ -35,7 +39,6 @@ export default class Register extends Component {
                 
             </View>
             </Image>)
-    }   
 }
 
 const styles = StyleSheet.create({
@@ -64,3 +67,5 @@ const styles = StyleSheet.create({
       marginBottom: 5,
     },
   });
+
+  export default Register;

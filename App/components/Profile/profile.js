@@ -12,23 +12,10 @@ import {
 } from 'react-native';
 
 var {height, width} = Dimensions.get('window');
-//import Nav from '../global-widgets/nav';
+import Nav from '../global-widgets/nav';
 
 
-export default class Profile extends Component {
-  constructor(props){
-    super(props)
-
-    this.state = {
-      friends: 1098
-    }
-    
-  }
-
-
-
-
-  render() {
+const Profile = () => {
     return (
       <View style={{flex:1}}>
       <Nav  type = "profile" onPress = {() => this.props.navigator.replace({id:'home'})} />
@@ -48,7 +35,7 @@ export default class Profile extends Component {
        </View>
        <View style ={styles.commons}>
        <Text style = {styles.title}>
-      {this.state.friends} for Common Connections
+      {/* {this.state.friends} for Common Connections */}
        </Text>
        <Text style={{marginTop:10, fontSize:14, color:'#666', fontWeight:"400"}}>We compare your Facebook friends with those of your matches to display any common connections</Text>
        </View>
@@ -88,7 +75,6 @@ export default class Profile extends Component {
         </ScrollView>
         </View>
     )
-}
 }
 //onPress = {() => this.renderNope()} 
 
@@ -150,3 +136,9 @@ const styles = StyleSheet.create({
   }
  
 });
+
+Profile.navigationOptions = {
+  title: 'noob please',
+};
+
+export default Profile;

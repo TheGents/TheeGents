@@ -22,6 +22,7 @@
 		"react-native-deprecated-custom-components": "^0.1.1",
 		"react-native-image-header": "^1.0.1",
 		"react-native-swipe-cards": "^0.1.0",
+		"react-navigation": "^1.0.0-beta.11",
 		"react-redux": "^5.0.6",
 		"redux": "^3.7.2",
 		"redux-devtools": "^3.4.0",
