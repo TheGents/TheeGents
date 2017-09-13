@@ -3,21 +3,21 @@
  * https://github.com/facebook/react-native
  * @flow
  */
-
 import React, { Component } from 'react';
 import {
-  AppRegistry,
-  StyleSheet,
-  Text,
-  View,
-  Image
+  AppRegistry
 } from 'react-native';
 
-import Register from "./App/components/Register/Register.js"
+
+//import Register from "./App/components/Register/Register.js";
+//import Profile from "./App/components/Profile/profile.js";
+//import Shop from "./App/components/GoShopping/GoShopping";
+import Messages from "./App/components/Matches/Matches";
 export default class TheeGents extends Component {
   render() {
     return (
-      <Register />
+      //<Register />
+      <Messages />
     );
   }
 }
