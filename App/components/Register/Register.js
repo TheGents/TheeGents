@@ -18,7 +18,7 @@ const Register = (props) => {
     const { navigate } = props.navigation;
         return (
             <Image source={require('../../../App/images/bg.jpg')} style={styles.backgroundImage}>
-            <Nav  type = "profile" onPress={() => navigate('Profile')} title="Go to Second Screen"/>
+            <Nav  type = "profile" onPress={() => navigate('GoShopping')} title="Go to Second Screen"/>
             <View style={styles.container}>
                 
                 <Text style={styles.welcome}>
