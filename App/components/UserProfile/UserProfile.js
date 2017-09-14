@@ -19,22 +19,12 @@ const Home = () => {
     return ( 
       <View style={{flex:1}}>
       <Nav  type = "home" />
-      <ScrollView style={styles.container}>
       <Image source ={require('../../images/player-vs-gentleman.jpg')} resizeMode="stretch" style={{height:350, width:width}} />
-       <View style={[styles.row, {marginTop:15}]}>
        <Text style = {{fontSize:19, fontWeight:'400'}}>Gentleman, </Text><Text style={{fontSize:21, fontWeight:'300', marginBottom:-2}}>23</Text>
        </View>
         
     )
 }
-//onPress = {() => this.renderNope()} 
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#f7f7f7',
-  }
-});
 
 
 export default Home;
