@@ -137,8 +137,5 @@ const styles = StyleSheet.create({
  
 });
 
-Profile.navigationOptions = {
-  title: 'noob please',
-};
 
 export default Profile;
