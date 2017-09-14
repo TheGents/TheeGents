@@ -7,7 +7,7 @@ import { StackNavigator } from 'react-navigation';
 
 import Register from "./App/components/Register/Register.js";
 import Profile from "./App/components/ShopProfile/profile.js";
-import Shop from "./App/components/GoShopping/GoShopping";
+import GoShopping from "./App/components/GoShopping/ShowShop.js";
 import Messages from "./App/components/Matches/Matches";
 import UserProfile from './App/components/UserProfile/UserProfile.js'
 
@@ -27,6 +27,11 @@ class TheeGents extends Component {
 const DaGents = StackNavigator({
   Home: { screen: Register },
   Profile: { screen: Profile },
+  GoShopping: { screen: GoShopping },
+  Matches: { screen: Messages },
+  // UserPreferences: { screen: UserPreferences },
+  // UserProfile: { screen: UserProfile },
+  // UserSetup: { screen: UserSetup },
   },
   { headerMode: 'none' }
 );
