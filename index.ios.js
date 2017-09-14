@@ -3,17 +3,18 @@ import {
   AppRegistry,
   Text
 } from 'react-native';
-import { TabNavigator } from 'react-navigation';
+import { StackNavigator } from 'react-navigation';
 
 import Register from "./App/components/Register/Register.js";
-import Profile from "./App/components/Profile/profile.js";
+import Profile from "./App/components/ShopProfile/profile.js";
 import Shop from "./App/components/GoShopping/GoShopping";
 import Messages from "./App/components/Matches/Matches";
+import UserProfile from './App/components/UserProfile/UserProfile.js'
 
 class TheeGents extends Component {
   static navigationOptions = {
-    title: 'Home Screen',
-  };
+    header: null,
+   };
 
   render(){
     const { navigation } = this.props;
@@ -23,10 +24,12 @@ class TheeGents extends Component {
   }
 }
 
-const DaGents = TabNavigator({
+const DaGents = StackNavigator({
   Home: { screen: Register },
   Profile: { screen: Profile },
-});
+  },
+  { headerMode: 'none' }
+);
 
 AppRegistry.registerComponent('TheeGents', () => DaGents);
 
