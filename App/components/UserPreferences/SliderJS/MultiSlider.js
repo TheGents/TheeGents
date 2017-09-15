@@ -10,7 +10,7 @@ import {
 } from 'react-native';
 
 import DefaultMarker from './DefaultMarker';
-import { createArray, valueToPosition, positionToValue } from './converters';
+import { createArray, valueToPosition, positionToValue } from './converter';
 
 const ViewPropTypes = require('react-native').ViewPropTypes || View.propTypes;
 
