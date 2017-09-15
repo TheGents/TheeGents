@@ -1,43 +1,41 @@
 import React, { Component } from 'react';
-import {
-  AppRegistry,
-  Text
-} from 'react-native';
+import { AppRegistry, Text } from 'react-native';
 import { StackNavigator } from 'react-navigation';
 
-import Register from "./App/components/Register/Register.js";
-import Profile from "./App/components/ShopProfile/profile.js";
-import GoShopping from "./App/components/GoShopping/ShowShop.js";
-import Messages from "./App/components/Matches/Matches";
-import UserProfile from './App/components/UserProfile/UserProfile.js'
+import Register from './App/components/Register/Register.js';
+import Profile from './App/components/ShopProfile/profile.js';
+import GoShopping from './App/components/GoShopping/ShowShop.js';
+import Messages from './App/components/Matches/Matches';
+import UserProfile from './App/components/UserProfile/UserProfile.js';
+import UserPreferences from './App/components/UserPreferences/UserPreferences'
 
 class TheeGents extends Component {
   static navigationOptions = {
-    header: null,
-   };
+    header: null
+  };
 
-  render(){
+  render() {
     const { navigation } = this.props;
-    return (
-      <Register navigation= { navigation }/>
-    );
+    return <Register navigation={navigation} />;
   }
 }
 
-const DaGents = StackNavigator({
-  Home: { screen: Register },
-  Profile: { screen: Profile },
-  GoShopping: { screen: GoShopping },
-  Matches: { screen: Messages },
-  // UserPreferences: { screen: UserPreferences },
-  // UserProfile: { screen: UserProfile },
-  // UserSetup: { screen: UserSetup },
+const DaGents = StackNavigator(
+  {
+    Home: { screen: Register },
+    Profile: { screen: Profile },
+    GoShopping: { screen: GoShopping },
+    Matches: { screen: Messages }
+    // UserPreferences: { screen: UserPreferences },
+    // UserProfile: { screen: UserProfile },
+    // UserSetup: { screen: UserSetup },
+    // UserPreferences: { screen: UserPreferences },
+
   },
   { headerMode: 'none' }
 );
 
 AppRegistry.registerComponent('TheeGents', () => DaGents);
-
 
 // import React, { Component } from 'react';
 // import { AppRegistry, View, Text, StyleSheet } from 'react-native';
@@ -83,6 +81,5 @@ AppRegistry.registerComponent('TheeGents', () => DaGents);
 //     </View>
 //   );
 // }
-
 
 // export default App;
