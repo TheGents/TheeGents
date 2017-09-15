@@ -6,16 +6,20 @@ const cors = require('cors')
 const passport = require('passport');
 const Auth0Strategy = require('passport-auth0');
 
-const config = require('./config/config.js');
+// const config = require('./config/config.js');
 const userCtrl = require('./ctrl/userCtrl.js')
 const loginCtrl = require('./ctrl/loginCtrl.js')
 
-let port = 3000;
+let port = process.env.PORT;
 
 const app = express();
 app.use(json());
 app.use(cors());
-app.use(session(config.session));
+app.use(session({
+    secret: "VincentChrisVuGentApp007",
+    saveUninitialized: false,
+    resave: true
+}));
 app.use(passport.initialize());
 app.use(passport.session());
 app.use(express.static('./public'));
@@ -33,6 +37,7 @@ app.put('/putUserPreferences', userCtrl.put_user_preferences)
 app.delete('/deleteMatch', userCtrl.delete_match)
 app.delete('/deleteUserAccount', userCtrl.delete_user_account)
 
+// const connectionString = process.env.DATABASE_URL; //Connects to heroku bro
 // massive.config(config.connectionString).then(db => app.set('db', db));
 
 // passport.use(new Auth0Strategy(config.auth0, (accessToken, refreshToken, extraParams, profile, done) => {
