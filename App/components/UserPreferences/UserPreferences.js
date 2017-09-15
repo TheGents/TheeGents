@@ -1,29 +1,25 @@
-/*
+'use strict';
+
 import React, { Component } from 'react';
-import {
+import { View, Text, StyleSheet } from 'react-native';
+import PrefSliders from './PrefSliders';
+import PrefButtons from './PrefButtons';
 
-  StyleSheet,
-  Image,
-  Text,
-  TextInput,
-  TouchableOpacity,
-  ListView,
-  View
-} from 'react-native';
-
-import { Navigator } from 'react-native-deprecated-custom-components';
-import Nav from './global-widgets/nav';
-
-
-class Preferences extends Component {
-    render() {
-        return( 
-            <View>
-                <Text>Preferences</Text>
-            </View>
-        );
-    }
+class UserPreferences extends Component {
+  render() {
+    return (
+      <View style={styles.container}>
+        <PrefSliders />
+        <PrefButtons />
+      </View>
+    );
+  }
 }
 
-export default Preferences;
-*/
+const styles = StyleSheet.create({
+  container: {
+    // flexDirection: 'row',
+  }
+});
+
+export default UserPreferences;

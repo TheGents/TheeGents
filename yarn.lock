@@ -2,6 +2,10 @@
 # yarn lockfile v1
 
 
+"@ptomasroos/react-native-multi-slider@^0.0.11":
+  version "0.0.11"
+  resolved "https://registry.yarnpkg.com/@ptomasroos/react-native-multi-slider/-/react-native-multi-slider-0.0.11.tgz#9ddc5ed07c1dff14e10b40d0e97e436bbc851393"
+
 abab@^1.0.3:
   version "1.0.3"
   resolved "https://registry.yarnpkg.com/abab/-/abab-1.0.3.tgz#b81de5f7274ec4e756d797cd834f303642724e5d"
@@ -129,6 +133,13 @@ append-transform@^0.4.0:
 aproba@^1.0.3:
   version "1.1.2"
   resolved "https://registry.yarnpkg.com/aproba/-/aproba-1.1.2.tgz#45c6629094de4e96f693ef7eab74ae079c240fc1"
+
+apsl-react-native-button@^3.1.0:
+  version "3.1.0"
+  resolved "https://registry.yarnpkg.com/apsl-react-native-button/-/apsl-react-native-button-3.1.0.tgz#8fe6ebf734cc5f1006c6eb1d54370abc3c3833f5"
+  dependencies:
+    lodash.isequal "^4.1.4"
+    prop-types "^15.5.10"
 
 are-we-there-yet@~1.1.2:
   version "1.1.4"
@@ -3314,6 +3325,10 @@ lodash.isarguments@^3.0.0:
 lodash.isarray@^3.0.0:
   version "3.0.4"
   resolved "https://registry.yarnpkg.com/lodash.isarray/-/lodash.isarray-3.0.4.tgz#79e4eb88c36a8122af86f844aa9bcd851b5fbb55"
+
+lodash.isequal@^4.1.4:
+  version "4.5.0"
+  resolved "https://registry.yarnpkg.com/lodash.isequal/-/lodash.isequal-4.5.0.tgz#415c4478f2bcc30120c22ce10ed3226f7d3e18e0"
 
 lodash.keys@^3.0.0:
   version "3.1.2"
